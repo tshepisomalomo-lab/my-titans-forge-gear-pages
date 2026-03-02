@@ -1,4 +1,115 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Braai Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/braai master.jpg" width="125px" alt="Braai Master">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu icon.webp" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Contact Section -->
+    <div class="small-container">
+        <h1 style="text-align:center; margin:40px 0 20px;">Get in Touch</h1>
+        <p style="text-align:center; margin-bottom:40px;">Questions about spices, meat, drinks or your next braai? We're here to help!</p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-2">
+                <form action="#" method="post">  
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-2">
+                <h3>Contact Details</h3>
+                <p><strong>Phone / WhatsApp:</strong> +267 71 234 567</p>
+                <p><strong>Email:</strong> info@braaimaster.co.bw</p>
+                <p><strong>Address:</strong> Main Mall / Block X, Gaborone, Botswana</p>
+                <p><strong>Hours:</strong> Mon–Sat: 9AM–7PM | Sun: Closed</p>
+
+                <h3 style="margin-top:30px;">Connect With Us</h3>
+                <p>
+                    <a href="#">Facebook</a> • 
+                    <a href="#">Instagram</a> • 
+                    <a href="#">X</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!--------footer-------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and iOS mobile phone</p>
+                     <img src="images/google-play.jpg" alt="PlayStore">
+                     <img src="images/app-store.jpg" alt="App Store">
+                
+                </div>
+                <div class="footer-col-2">
+                    <h3><img src="images/braai master.jpg"></h3>
+                    <p>Quality Cuts & Cold Ones – Making the Good Life Accessible to Everyone</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - THE BRAAI MASTER</p>
+        </div>
+    </div>
+
+   <!----------js for toggle menu---------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        if (MenuItems) MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
