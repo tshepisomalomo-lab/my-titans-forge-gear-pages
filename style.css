@@ -3,16 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400; 
-}
-.tagline {
-    font-weight: 300; 
-}
-h1, h2, .navbar-brand {
-    font-weight: 600;
-}
 .navbar{
  display: flex;              
   align-items: center;        
@@ -35,6 +25,20 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+}
+.tagline {
+    font-weight: 300; 
+}
+h1, h2, .navbar-brand {
+    font-weight: 600;
+};
+nav ul{
+    display: inline-block;
+    list-style-type: none;
 }
 a{
     text-decoration: none;
