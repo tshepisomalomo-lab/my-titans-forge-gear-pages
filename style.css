@@ -218,6 +218,16 @@ ul{
     margin-left: 20px;
     display: none;
 }
+    .app-logo {
+    margin-top: 15px;
+}
+
+.app-logo img {
+    width: 135px;           
+    height: auto;
+    margin: 0 12px;
+    vertical-align: middle;
+}
 /*----------all products----------*/
 .row-2{
     justify-content: space-between;
