@@ -200,3 +200,9 @@ h4{
 ul{
     list-style: none;
 }
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
