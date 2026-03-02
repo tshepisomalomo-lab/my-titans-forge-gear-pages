@@ -6,7 +6,8 @@
 .navbar{
  display: flex;              
   align-items: center;        
-  justify-content: center;    
+  justify-content: center;
+  padding: 20px;    
   gap: 1.5rem;                
   flex-wrap: nowrap;
 }
@@ -36,6 +37,10 @@ body {
 h1, h2, .navbar-brand {
     font-weight: 600;
 };
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
 a{
     text-decoration: none;
     color: #555;
