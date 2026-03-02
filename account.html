@@ -1,4 +1,130 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-Brooks & CO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="small-container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"></a><img src="images/Brooks & CO.jpg" width="125px" width="125px">
+            </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    
+                </ul>
+            </nav>
+             <a href="cart.html"></a><img src="images/cart.jpg" width="30px" height="30px" alt="Cart"></a>
+        </div>
+    </div>
+
+    <!-----------------account page------------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Cool-Clothing-Brand-eCommerce-Website-for-Women.png" width="100%">
+                </div>
+                
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="Register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href=""Forgot password></a>
+                        </form>
+
+                         <formRegForm>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input type="email" placeholder="Email">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+
+    <!------ Footer------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and iOS mobile phones</p>
+                    <div class="app-logo">
+                        <img src="images/playstore.png" alt="Play Store">
+                        <img src="images/apple store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - BROOKS & CO</p>
+        </div>
+    </div>
+
+    </script>
+
+
+
+    <!--------js for toggle form-------->
+    <script>
+        var LoginForm = document.getElementByID("LoginForm");
+        var RegForm = document.getElementByID("RegForm");
+        var Indicator = document.getElementByID("Indicator");
+
+           function register(){
+                
+               RegForm.style.transform = "translateX(0px)";
+               LoginForm.style.transform = "translateX(0px)";
+               Indicator.style.transform = "translateX(100px)";
+           }
+           function Login(){
+                
+               RegForm.style.transform = "translateX(300px)";
+               LoginForm.style.transform = "translateX(300px)";
+               Indicator.style.transform = "translateX(0px)";
+
+           }
+    </script>
+</body>
+</html>
