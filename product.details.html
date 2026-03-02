@@ -28,17 +28,17 @@
        <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="images/tanqueray2.webp" width="100%" alt="Tanqueray Gin" id="product-img">
+                <img src="images/tanqueray2.webp" width="100%" alt="Tanqueray Gin" id="ProductImg">
             </div>
             <div class="small-img-row">
                 <div class="small-img-col">
-                    <img src="images/tanqueray.jpg" width="100%" class="small-img-">
+                    <img src="images/tanqueray.jpg" width="100%" class="small-img">
                  </div>
                  <div class="small-img-col">
-                    <img src="images/tanqueray3.jpg" width="100%" class="small-img-">
+                    <img src="images/tanqueray3.jpg" width="100%" class="small-img">
                  </div>
                  <div class="small-img-col">
-                    <img src="images/tanqueray4.jpg" width="100%" class="small-img-">
+                    <img src="images/tanqueray4.jpg" width="100%" class="small-img">
                  </div>
             <div class="col-2">
                 <p>Home / Tanqueray</p>
@@ -158,5 +158,32 @@
         }
         }
      </script>
+
+<!----------js for product gallery---------->
+<script>
+    var ProductImg = document.getElementId("ProductImg"); 
+    var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg [0].onclick = function()
+        {
+         ProductImg.src = SmallImg [0].src;
+        }
+        
+          SmallImg [1].onclick = function()
+        {
+         ProductImg.src = SmallImg [1].src;
+        }
+         SmallImg [2].onclick = function()
+        {
+         ProductImg.src = SmallImg [2].src;
+        }
+         SmallImg [3].onclick = function()
+        {
+         ProductImg.src = SmallImg [3].src;
+        }
+</script>
+ 
+
+
+
 </body>
 </html>
