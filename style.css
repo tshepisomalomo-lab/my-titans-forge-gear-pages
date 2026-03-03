@@ -331,8 +331,11 @@ select:focus{
     transition: transform 0.45s ease;
 }
 
-#LoginForm {
-    transform: translateX(0);
+#LoginForm, #RegForm {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+    padding: 20px;
 }
 
 #RegForm {
