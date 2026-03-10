@@ -59,7 +59,7 @@ p{
     justify-content: center;   
     align-items: center;          
     min-height: 400px;            
-    text-align: center;           
+    text-align: left;           
 }
 .col-2 {
     max-width: 700px;            
