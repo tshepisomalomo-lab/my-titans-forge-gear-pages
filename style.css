@@ -148,12 +148,6 @@ h4{
 .col-4 :hover{
     transform: translateY(-5px);
 }
-.form{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400  
-    color: #555;
-    background: radial-gradient(#fff,#0c63b4 );
-}
 
 
 /*------------brand-------------*/
