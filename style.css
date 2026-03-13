@@ -150,21 +150,83 @@ h4{
 }
 
 
-/*------------brand-------------*/
-.brands{
-    margin: 100px auto;
+/*------------EXCLUSIVE AMENITIES SECTION-------------*/
+.amenities {
+  background: #f9f4eb;
+  padding: 100px 20px;
+  text-align: center;
 }
-.col-5{
-    width: 160px;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.col-5 img{
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(100%);
+
+.amenities-header {
+  margin-bottom: 60px;
 }
-.col-5 img:hover{
-    filter: grayscale(0);
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #e67e22;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
 }
+
+.amenities h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  color: #222;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #e67e22;
+  font-style: italic;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 3.5rem;
+  color: #e67e22;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+
 
 /*----------Footer----------*/
 .footer{
