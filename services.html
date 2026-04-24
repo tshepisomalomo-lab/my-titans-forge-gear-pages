@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Speed Travel & Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Full speed logo.jpg" width="125px" alt="full speed logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fleets.html">Our Fleets</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu icon.webp" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ── BOOKING SECTION ── -->
+    <section class="booking-section" id="book">
+        <div class="booking-wrapper fade-up">
+ 
+            <!-- Header Banner -->
+            <div class="form-header">
+                <p class="eyebrow"><i class="fa-solid fa-ticket"></i> &nbsp;Reserve Your Seat</p>
+                <h2>Book Your Journey</h2>
+                <p>Fill in your details below and our team will confirm your booking promptly. For urgent requests, reach us directly on WhatsApp.</p>
+            </div>
+ 
+            <!-- Form Body -->
+            <div class="form-body">
+ 
+                <!-- Personal Details -->
+                <p class="form-section-label"><i class="fa-solid fa-user"></i> &nbsp;Personal Details</p>
+ 
+                <div class="form-group">
+                    <label><i class="fa-solid fa-user"></i> Full Name</label>
+                    <input type="text" placeholder="Enter your full name" />
+                </div>
+ 
+                <div class="form-group">
+                    <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+                    <input type="tel" placeholder="+267 or +263 number" />
+                </div>
+ 
+                <hr class="form-divider">
+ 
+                <!-- Trip Details -->
+                <p class="form-section-label"><i class="fa-solid fa-bus"></i> &nbsp;Trip Details</p>
+ 
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-route"></i> Route</label>
+                        <select>
+                            <option>Gaborone → Harare</option>
+                            <option>Harare → Gaborone</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-star"></i> Seat Class</label>
+                        <select>
+                            <option>Standard</option>
+                            <option>Premium</option>
+                            <option>VIP</option>
+                        </select>
+                    </div>
+                </div>
+ 
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-calendar"></i> Travel Date</label>
+                        <input type="date" />
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-users"></i> Passengers</label>
+                        <select>
+                            <option value="1">1 Passenger</option>
+                            <option value="2">2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4 Passengers</option>
+                            <option value="5">5+ Passengers</option>
+                        </select>
+                    </div>
+                </div>
+ 
+                <!-- Submit -->
+                <button class="submit-btn" id="submitBtn">
+                    <i class="fa-solid fa-paper-plane"></i> Submit Enquiry
+                </button>
+ 
+                <p class="whatsapp-note">
+                    Need an instant response?
+                    <a href="https://wa.me/267XXXXXXXX" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </p>
+ 
+            </div><!-- /form-body -->
+        </div><!-- /booking-wrapper -->
+    </section>
+ 
+    <script>
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+ 
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+ 
+        // Form submit handler
+        const btn = document.getElementById('submitBtn');
+        btn.addEventListener('click', () => {
+            btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Enquiry Sent — We\'ll contact you shortly!';
+            btn.classList.add('success');
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Enquiry';
+                btn.classList.remove('success');
+                btn.disabled = false;
+            }, 4000);
+        });
+ 
+        // Menu toggle (for your existing navbar)
+        function menutoggle() {
+            const menu = document.getElementById('MenuItems');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+</script>
+    
+</body>

@@ -296,6 +296,197 @@ h4{
   line-height: 1.6;
 }
 
+/* ── BOOKING SECTION STYLES ── */
+ .booking-section {
+    padding: 60px 40px;
+    background: #f0f4f8;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+ 
+.booking-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+ 
+ /* Form Header Banner */
+.form-header {
+    background: linear-gradient(135deg, #1565C0 0%, #0288D1 100%);
+    padding: 32px 36px;
+    color: #fff;
+} 
+.form-header .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 6px;
+} 
+.form-header h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    line-height: 1.2;
+}
+.form-header p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+  /* Form Body */
+.form-body {
+    padding: 36px;
+}
+ 
+ /* Field Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #37474F;
+    margin-bottom: 7px;
+}
+.form-group label i {
+    color: #0288D1;
+    font-size: 0.85rem;
+} 
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #CFD8DC;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #263238;
+    background: #FAFAFA;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+}
+ 
+.form-group select {
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230288D1' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   background-position: right 14px center;
+   padding-right: 38px;
+   cursor: pointer;
+}
+ 
+.form-group input:focus,
+.form-group select:focus {
+   border-color: #0288D1;
+   box-shadow: 0 0 0 3px rgba(2, 136, 209, 0.12);
+   background: #fff;
+}
+ 
+.form-group input::placeholder {
+   color: #B0BEC5;
+}
+ 
+/* Two-column row */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+ 
+/* Divider */
+.form-divider {
+    border: none;
+    border-top: 1.5px solid #ECEFF1;
+    margin: 24px 0;
+}
+
+/* Section label inside form */
+.form-section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #0288D1;
+    margin-bottom: 16px;
+}
+ 
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1565C0, #0288D1);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(2,136,209,0.35);
+}
+ 
+.submit-btn:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(2,136,209,0.45);
+}
+ 
+.submit-btn:active {
+    transform: translateY(0);
+}
+ 
+/* WhatsApp quick link */
+.whatsapp-note {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: #607D8B;
+}
+ 
+.whatsapp-note a {
+    color: #25D366;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+ 
+.whatsapp-note a:hover { text-decoration: underline; }
+ 
+/* Success state */
+.submit-btn.success {
+     background: linear-gradient(135deg, #2E7D32, #43A047) !important;
+    box-shadow: 0 4px 14px rgba(46,125,50,0.35);
+}
+ 
+/* Responsive */
+@media (max-width: 600px) {
+    .booking-section { padding: 24px 16px; }
+    .form-header { padding: 24px 22px; }
+    .form-body { padding: 24px 22px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+}
+   
+
 /*----------Footer----------*/
 .footer{
     background: #000000;
