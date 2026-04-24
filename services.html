@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Speed Travel & Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Full speed logo.jpg" width="125px" alt="full speed logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fleets.html">Our Fleets</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu icon.webp" class="menu-icon" onclick="menutoggle(); return false;">
+            </div>
+        </div>
+    </div>
+ 
+  <div class="safari-section">
+  <div class="small-container">
+    <h2 class="section-title">Safari Packages</h2>
+
+  <!-- Row 1 -->
+<div class="row">
+
+    <div class="col-4">
+      <img src="images/Maletsunyane Falls.jpg" alt="Machaba Romantic Package">
+      <h4>Machaba Romantic Package</h4>
+      <div class="car-specs">
+        <span>🌍 Gaborone → Machaba</span>
+        <span>🌙 2N Ngoma | 3N Machaba</span>
+      </div>
+      <div class="price-tabs">
+        <button class="price-tab" onclick="setPrice(this, 'P2,800')">Standard</button>
+        <button class="price-tab" onclick="setPrice(this, 'P3,600')">Business</button>
+        <button class="price-tab active" onclick="setPrice(this, 'P4,800')">VIP</button>
+      </div>
+      <div class="price-row">
+        <span class="price-display">P4,800</span>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <img src="images/okavango.jpg" alt="Okavango Escape">
+      <h4>Okavango Delta Escape</h4>
+      <div class="car-specs">
+        <span>🌍 Maun → Okavango</span>
+        <span>🌙 3N Xaranna | 2N Sandibe</span>
+      </div>
+      <div class="price-tabs">
+        <button class="price-tab" onclick="setPrice(this, 'P3,500')">Standard</button>
+        <button class="price-tab" onclick="setPrice(this, 'P4,900')">Business</button>
+        <button class="price-tab active" onclick="setPrice(this, 'P6,500')">VIP</button>
+      </div>
+      <div class="price-row">
+        <span class="price-display">P6,500</span>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </div>
+   
+
+    <div class="col-4">
+      <img src="images/chobe.jpg" alt="Chobe Retreat">
+      <h4>Chobe River Retreat</h4>
+      <div class="car-specs">
+        <span>🌍 Gaborone → Chobe</span>
+        <span>🌙 4N Chobe Game Lodge</span>
+      </div>
+      <div class="price-tabs">
+        <button class="price-tab" onclick="setPrice(this, 'P3,200')">Standard</button>
+        <button class="price-tab" onclick="setPrice(this, 'P4,100')">Business</button>
+        <button class="price-tab active" onclick="setPrice(this, 'P5,000')">VIP</button>
+      </div>
+      <div class="price-row">
+        <span class="price-display">P5,000</span>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </div>
+
+ <div class="safari-section">
+    <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-4">
+            <img src="images/savuti.jpg" alt="Savuti Predator Safari">
+            <div class="card-content">
+                <h4>Savuti Predator Safari</h4>
+                <div class="car-specs">
+                    <span>🌍 Maun → Savuti</span>
+                    <span>🌙 3N Savuti Camp</span>
+                </div>
+                <div class="price-tabs">
+                    <button class="price-tab" onclick="setPrice(this, 'P2,500')">Standard</button>
+                    <button class="price-tab" onclick="setPrice(this, 'P3,400')">Business</button>
+                    <button class="price-tab active" onclick="setPrice(this, 'P4,700')">VIP</button>
+                </div>
+                <div class="price-row">
+                    <span class="price-display">P4,700</span>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-4">
+            <img src="images/linyanti.jpg" alt="Linyanti Wilderness">
+            <div class="card-content">
+                <h4>Linyanti Wilderness</h4>
+                <div class="car-specs">
+                    <span>🌍 Kasane → Linyanti</span>
+                    <span>🌙 2N Kings Pool | 3N Duma Tau</span>
+                </div>
+                <div class="price-tabs">
+                    <button class="price-tab" onclick="setPrice(this, 'P3,200')">Standard</button>
+                    <button class="price-tab" onclick="setPrice(this, 'P4,400')">Business</button>
+                    <button class="price-tab active" onclick="setPrice(this, 'P5,900')">VIP</button>
+                </div>
+                <div class="price-row">
+                    <span class="price-display">P5,900</span>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-4">
+            <img src="images/victoria falls.jpg" alt="Victoria Falls & Hwange">
+            <div class="card-content">
+                <h4>Victoria Falls & Hwange</h4>
+                <div class="car-specs">
+                    <span>🌍 Gaborone → Vic Falls</span>
+                    <span>🌙 2N Falls | 3N Hwange</span>
+                </div>
+                <div class="price-tabs">
+                    <button class="price-tab" onclick="setPrice(this, 'P2,000')">Standard</button>
+                    <button class="price-tab" onclick="setPrice(this, 'P2,800')">Business</button>
+                    <button class="price-tab active" onclick="setPrice(this, 'P3,800')">VIP</button>
+                </div>
+                <div class="price-row">
+                    <span class="price-display">P3,800</span>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!---- BOOKING SECTION ---->
+    <section class="booking-section" id="book">
+        <div class="booking-wrapper fade-up">
+ 
+            <!-- Header Banner -->
+            <div class="form-header">
+                <p class="eyebrow"><i class="fa-solid fa-ticket"></i> &nbsp;Reserve Your Seat</p>
+                <h2>Book Your Journey</h2>
+                <p>Fill in your details below and our team will confirm your booking promptly. For urgent requests, reach us directly on WhatsApp.</p>
+            </div>
+ 
+            <!-- Form Body -->
+            <div class="form-body">
+ 
+                <!-- Personal Details -->
+                <p class="form-section-label"><i class="fa-solid fa-user"></i> &nbsp;Personal Details</p>
+ 
+                <div class="form-group">
+                    <label><i class="fa-solid fa-user"></i> Full Name</label>
+                    <input type="text" placeholder="Enter your full name" />
+                </div>
+ 
+                <div class="form-group">
+                    <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+                    <input type="tel" placeholder="+267 or +263 number" />
+                </div>
+ 
+                <hr class="form-divider">
+ 
+                <!-- Trip Details -->
+                <p class="form-section-label"><i class="fa-solid fa-bus"></i> &nbsp;Trip Details</p>
+ 
+                <div class="form-row">
+                    <div class="form-group">
+    <label><i class="fa-solid fa-route"></i> Route</label>
+    <select id="route-select">
+        <!-- From Gaborone -->
+        <optgroup label="From Gaborone To:">
+            <option value="gaborone-to-chobe">Gaborone → Chobe</option>
+            <option value="gaborone-to-linyanti">Gaborone → Linyanti</option>
+            <option value="gaborone-to-savuti-machaba">Gaborone → Savuti / Machaba</option>
+            <option value="gaborone-to-victoria-falls">Gaborone → Victoria Falls</option>
+            <option value="gaborone-to-okavango">Gaborone → Okavango</option>
+            <option value="gaborone-to-harare">Gaborone → Harare</option>
+            <option value="gaborone-to-swakopmund">Gaborone → Swakopmund</option>
+        </optgroup>
+
+        <!-- Back to Gaborone -->
+           <optgroup label="Back to Gaborone From:">
+             <option value="chobe-to-gaborone">Chobe → Gaborone</option>
+             <option value="linyanti-to-gaborone">Linyanti → Gaborone</option>
+             <option value="savuti-machaba-to-gaborone">Savuti / Machaba → Gaborone</option>
+             <option value="victoria-falls-to-gaborone">Victoria Falls → Gaborone</option>
+             <option value="okavango-to-gaborone">Okavango → Gaborone</option>
+             <option value="harare-to-gaborone">Harare → Gaborone</option>
+              <option value="swakopmund-to-gaborone">Swakopmund → Gaborone</option>
+             </optgroup>
+      </select>
+    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-star"></i> Seat Class</label>
+                        <select>
+                            <option>Standard</option>
+                            <option>Premium</option>
+                            <option>VIP</option>
+                        </select>
+                    </div>
+                </div>
+ 
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-calendar"></i> Travel Date</label>
+                        <input type="date" />
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-users"></i> Passengers</label>
+                        <select>
+                            <option value="1">1 Passenger</option>
+                            <option value="2">2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4 Passengers</option>
+                            <option value="5">5+ Passengers</option>
+                        </select>
+                    </div>
+                </div>
+ 
+                <!-- Submit -->
+                <button class="submit-btn" id="submitBtn">
+                    <i class="fa-solid fa-paper-plane"></i> Submit Enquiry
+                </button>
+ 
+                <p class="whatsapp-note">
+                    Need an instant response?
+                    <a href="https://wa.me/267XXXXXXXX" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </p>
+ 
+            </div><!-- /form-body -->
+        </div><!-- /booking-wrapper -->
+    </section>
+ 
+     <!--------footer-------->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+            
+                <div class="footer-col-2">
+                    <h3><img src="images/Full speed logo.jpg"></h3>
+                    <p>Experience luxury travel and comfort</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>Instagram</li>
+                        <li>X</li>
+                    </ul>
+            </div>
+        </div>
+         <hr>
+         <p class="copyright">CopyRight 2026-Full Speed Travel & Tours</p>
+        </div>
+     </div>
+
+    <script>
+        function setPrice(clickedTab, price) {
+  // Get all tabs in the same .price-tabs group
+  const tabGroup = clickedTab.parentElement;
+  tabGroup.querySelectorAll('.price-tab').forEach(tab => {
+    tab.classList.remove('active');
+  });
+ 
+  // Set clicked tab as active
+  clickedTab.classList.add('active');
+ 
+  // Update the price display in the same card
+  const card = tabGroup.closest('.col-4');
+  card.querySelector('.price-display').textContent = price;
+}
+
+
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+ 
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+ 
+        // Form submit handler
+        const btn = document.getElementById('submitBtn');
+        btn.addEventListener('click', () => {
+            btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Enquiry Sent — We\'ll contact you shortly!';
+            btn.classList.add('success');
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Enquiry';
+                btn.classList.remove('success');
+                btn.disabled = false;
+            }, 4000);
+        });
+ 
+        // Menu toggle (for your existing navbar)
+        function menutoggle() {
+            const menu = document.getElementById('MenuItems');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+</script>
+    
+</body>
+</html>

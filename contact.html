@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Full Speed Travel & Tours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation / Site Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Full speed logo.jpg" width="125px" alt="Full Speed logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fleets.html">Our Fleets</a></li>
+                        <li><a href="services.html">Tours</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu icon.webp" class="menu-icon" onclick="menutoggle()" alt="menu">
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Intro -->
+    <section class="small-container">
+        <h1 style="text-align:center; margin:40px 0 20px;">Get in Touch</h1>
+        <p style="text-align:center; margin-bottom:40px;">
+            Cross-Border Trips • Tour advice • Botswana travel questions?
+        </p>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section class="small-container">
+            <div class="row">
+
+                <!-- Contact Form -->
+                <article class="col-2">
+                    <form action="#" method="post">  
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </article>
+
+                <!-- Contact Info -->
+                <aside class="col-2">
+                    <h3>Contact Details</h3>
+                    <p><strong>Phone / WhatsApp:</strong> +267 71 234 567</p>
+                    <p><strong>Email:</strong> info@fullspeed.co.bw</p>
+                    <p><strong>Address:</strong> Main Mall / Block X, Gaborone, Botswana</p>
+                    <p><strong>Hours:</strong> Mon–Sat: 8AM–4:30PM | Sun: Closed</p>
+
+                    <h3 style="margin-top:30px;">Connect With Us</h3>
+                    <p>
+                        <a href="#">Facebook</a> • 
+                        <a href="#">Instagram</a> • 
+                        <a href="#">X</a>
+                    </p>
+                </aside>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/Full speed logo.jpg" alt="logo">
+                    <p>Experience luxury travel and comfort</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - Full Speed Travel & Tours</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        if (MenuItems) MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight === "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
