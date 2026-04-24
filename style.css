@@ -265,45 +265,217 @@ h4{
   color: #e67e22;
   font-style: italic;
 }
+
 .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
-.card {
-  background: white;
-  padding: 40px 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-.icon {
-  font-size: 3.5rem;
-  color: #e67e22;
-  margin-bottom: 20px;
-  display: block;
-}
-.card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-  color: #222;
-}
-.card p {
-  color: #666;
-  line-height: 1.6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
 }
 
-/* ── BOOKING SECTION STYLES ── */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    color: #e67e22;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.6;
+}
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .cards-grid { grid-template-columns: 1fr; }
+}
+
+.safari-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;        
+}
+
+.safari-section .col-4 {
+    flex: 1 1 32%;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.safari-section .col-4 img {
+    width: 100%;
+    height: 200px;             
+    object-fit: cover;           
+    display: block;
+}
+
+.safari-section .card-content {
+    flex: 1;                    
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.safari-section h4 {
+    min-height: 50px;            
+    margin-bottom: 12px;
+}
+
+.safari-section .car-specs {
+    min-height: 60px;
+    margin-bottom: 14px;
+}
+
+.safari-section .price-row {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.safari-section .price-row {
+    margin-top: auto;                
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.safari-section .price-display {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.safari-section .explore-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+    .safari-section .col-4 {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .safari-section .col-4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/*----Price tabs----*/
+.price-tabs {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+ 
+.price-tab {
+  flex: 1;
+  padding: 5px 0;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f5f5f5;
+  color: #666;
+  border: none;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+ 
+.price-tab:last-child {
+  border-right: none;
+}
+ 
+.price-tab.active {
+  background: #333;
+  color: #fff;
+}
+ 
+/*-----Price + button row------*/
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.price-display {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  
+}
+ .explore-btn {
+  background: #E8336C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.explore-btn:hover {
+  opacity: 0.85;
+}
+ 
+/*-------------Responsive-------------*/
+ @media (max-width: 768px) {
+    .cards-grid{ grid-template-columns: repeat(2, 1fr);}
+}
+  @media (max-width: 480px) {
+    .cards-grid { grid-template-columns: 1fr;}
+}
+
+/* ------------- BOOKING SECTION STYLES ------------- */
  .booking-section {
     padding: 60px 40px;
     background: #f0f4f8;
     min-height: 100vh;
     font-family: 'Segoe UI', sans-serif;
 }
- 
 .booking-wrapper {
     max-width: 680px;
     margin: 0 auto;
@@ -312,8 +484,8 @@ h4{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     overflow: hidden;
 }
- 
- /* Form Header Banner */
+
+ /*------------- Form Header Banner------------- */
 .form-header {
     background: linear-gradient(135deg, #1565C0 0%, #0288D1 100%);
     padding: 32px 36px;
@@ -338,12 +510,12 @@ h4{
     line-height: 1.6;
     margin: 0;
 }
-  /* Form Body */
+  /*-------------Form Body-------------*/
 .form-body {
     padding: 36px;
 }
  
- /* Field Groups */
+ /*-------------Field Groups-------------*/
 .form-group {
     margin-bottom: 20px;
 }
@@ -397,21 +569,21 @@ h4{
    color: #B0BEC5;
 }
  
-/* Two-column row */
+/*-------------Two-column row-------------*/
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
  
-/* Divider */
+/*-------------Divider-------------*/
 .form-divider {
     border: none;
     border-top: 1.5px solid #ECEFF1;
     margin: 24px 0;
 }
 
-/* Section label inside form */
+/*-----Section label inside form-----*/
 .form-section-label {
     font-size: 0.72rem;
     font-weight: 700;
@@ -421,7 +593,7 @@ h4{
     margin-bottom: 16px;
 }
  
-/* Submit Button */
+/*-----Submit Button-----*/
 .submit-btn {
     width: 100%;
     padding: 14px;
@@ -453,7 +625,7 @@ h4{
     transform: translateY(0);
 }
  
-/* WhatsApp quick link */
+/*---WhatsApp quick link---*/
 .whatsapp-note {
     text-align: center;
     margin-top: 18px;
@@ -472,13 +644,13 @@ h4{
  
 .whatsapp-note a:hover { text-decoration: underline; }
  
-/* Success state */
+/*-------------Success state-------------*/
 .submit-btn.success {
      background: linear-gradient(135deg, #2E7D32, #43A047) !important;
     box-shadow: 0 4px 14px rgba(46,125,50,0.35);
 }
  
-/* Responsive */
+/*-------------Responsive-------------*/
 @media (max-width: 600px) {
     .booking-section { padding: 24px 16px; }
     .form-header { padding: 24px 22px; }

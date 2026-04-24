@@ -23,12 +23,143 @@
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <img src="images/menu icon.webp" class="menu-icon" onclick="menutoggle()">
+                <img src="images/menu icon.webp" class="menu-icon" onclick="menutoggle(); return false;">
             </div>
         </div>
     </div>
  
-    <!-- ── BOOKING SECTION ── -->
+  <div class="safari-section">
+  <div class="small-container">
+    <h2 class="section-title">Safari Packages</h2>
+
+  <!-- Row 1 -->
+<div class="row">
+
+    <div class="col-4">
+      <img src="images/Maletsunyane Falls.jpg" alt="Machaba Romantic Package">
+      <h4>Machaba Romantic Package</h4>
+      <div class="car-specs">
+        <span>🌍 Gaborone → Machaba</span>
+        <span>🌙 2N Ngoma | 3N Machaba</span>
+      </div>
+      <div class="price-tabs">
+        <button class="price-tab" onclick="setPrice(this, 'P2,800')">Standard</button>
+        <button class="price-tab" onclick="setPrice(this, 'P3,600')">Business</button>
+        <button class="price-tab active" onclick="setPrice(this, 'P4,800')">VIP</button>
+      </div>
+      <div class="price-row">
+        <span class="price-display">P4,800</span>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <img src="images/okavango.jpg" alt="Okavango Escape">
+      <h4>Okavango Delta Escape</h4>
+      <div class="car-specs">
+        <span>🌍 Maun → Okavango</span>
+        <span>🌙 3N Xaranna | 2N Sandibe</span>
+      </div>
+      <div class="price-tabs">
+        <button class="price-tab" onclick="setPrice(this, 'P3,500')">Standard</button>
+        <button class="price-tab" onclick="setPrice(this, 'P4,900')">Business</button>
+        <button class="price-tab active" onclick="setPrice(this, 'P6,500')">VIP</button>
+      </div>
+      <div class="price-row">
+        <span class="price-display">P6,500</span>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </div>
+   
+
+    <div class="col-4">
+      <img src="images/chobe.jpg" alt="Chobe Retreat">
+      <h4>Chobe River Retreat</h4>
+      <div class="car-specs">
+        <span>🌍 Gaborone → Chobe</span>
+        <span>🌙 4N Chobe Game Lodge</span>
+      </div>
+      <div class="price-tabs">
+        <button class="price-tab" onclick="setPrice(this, 'P3,200')">Standard</button>
+        <button class="price-tab" onclick="setPrice(this, 'P4,100')">Business</button>
+        <button class="price-tab active" onclick="setPrice(this, 'P5,000')">VIP</button>
+      </div>
+      <div class="price-row">
+        <span class="price-display">P5,000</span>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </div>
+
+ <div class="safari-section">
+    <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-4">
+            <img src="images/savuti.jpg" alt="Savuti Predator Safari">
+            <div class="card-content">
+                <h4>Savuti Predator Safari</h4>
+                <div class="car-specs">
+                    <span>🌍 Maun → Savuti</span>
+                    <span>🌙 3N Savuti Camp</span>
+                </div>
+                <div class="price-tabs">
+                    <button class="price-tab" onclick="setPrice(this, 'P2,500')">Standard</button>
+                    <button class="price-tab" onclick="setPrice(this, 'P3,400')">Business</button>
+                    <button class="price-tab active" onclick="setPrice(this, 'P4,700')">VIP</button>
+                </div>
+                <div class="price-row">
+                    <span class="price-display">P4,700</span>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-4">
+            <img src="images/linyanti.jpg" alt="Linyanti Wilderness">
+            <div class="card-content">
+                <h4>Linyanti Wilderness</h4>
+                <div class="car-specs">
+                    <span>🌍 Kasane → Linyanti</span>
+                    <span>🌙 2N Kings Pool | 3N Duma Tau</span>
+                </div>
+                <div class="price-tabs">
+                    <button class="price-tab" onclick="setPrice(this, 'P3,200')">Standard</button>
+                    <button class="price-tab" onclick="setPrice(this, 'P4,400')">Business</button>
+                    <button class="price-tab active" onclick="setPrice(this, 'P5,900')">VIP</button>
+                </div>
+                <div class="price-row">
+                    <span class="price-display">P5,900</span>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-4">
+            <img src="images/victoria falls.jpg" alt="Victoria Falls & Hwange">
+            <div class="card-content">
+                <h4>Victoria Falls & Hwange</h4>
+                <div class="car-specs">
+                    <span>🌍 Gaborone → Vic Falls</span>
+                    <span>🌙 2N Falls | 3N Hwange</span>
+                </div>
+                <div class="price-tabs">
+                    <button class="price-tab" onclick="setPrice(this, 'P2,000')">Standard</button>
+                    <button class="price-tab" onclick="setPrice(this, 'P2,800')">Business</button>
+                    <button class="price-tab active" onclick="setPrice(this, 'P3,800')">VIP</button>
+                </div>
+                <div class="price-row">
+                    <span class="price-display">P3,800</span>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!---- BOOKING SECTION ---->
     <section class="booking-section" id="book">
         <div class="booking-wrapper fade-up">
  
@@ -62,12 +193,31 @@
  
                 <div class="form-row">
                     <div class="form-group">
-                        <label><i class="fa-solid fa-route"></i> Route</label>
-                        <select>
-                            <option>Gaborone → Harare</option>
-                            <option>Harare → Gaborone</option>
-                        </select>
-                    </div>
+    <label><i class="fa-solid fa-route"></i> Route</label>
+    <select id="route-select">
+        <!-- From Gaborone -->
+        <optgroup label="From Gaborone To:">
+            <option value="gaborone-to-chobe">Gaborone → Chobe</option>
+            <option value="gaborone-to-linyanti">Gaborone → Linyanti</option>
+            <option value="gaborone-to-savuti-machaba">Gaborone → Savuti / Machaba</option>
+            <option value="gaborone-to-victoria-falls">Gaborone → Victoria Falls</option>
+            <option value="gaborone-to-okavango">Gaborone → Okavango</option>
+            <option value="gaborone-to-harare">Gaborone → Harare</option>
+            <option value="gaborone-to-swakopmund">Gaborone → Swakopmund</option>
+        </optgroup>
+
+        <!-- Back to Gaborone -->
+           <optgroup label="Back to Gaborone From:">
+             <option value="chobe-to-gaborone">Chobe → Gaborone</option>
+             <option value="linyanti-to-gaborone">Linyanti → Gaborone</option>
+             <option value="savuti-machaba-to-gaborone">Savuti / Machaba → Gaborone</option>
+             <option value="victoria-falls-to-gaborone">Victoria Falls → Gaborone</option>
+             <option value="okavango-to-gaborone">Okavango → Gaborone</option>
+             <option value="harare-to-gaborone">Harare → Gaborone</option>
+              <option value="swakopmund-to-gaborone">Swakopmund → Gaborone</option>
+             </optgroup>
+      </select>
+    </div>
                     <div class="form-group">
                         <label><i class="fa-solid fa-star"></i> Seat Class</label>
                         <select>
@@ -112,6 +262,23 @@
     </section>
  
     <script>
+        function setPrice(clickedTab, price) {
+  // Get all tabs in the same .price-tabs group
+  const tabGroup = clickedTab.parentElement;
+  tabGroup.querySelectorAll('.price-tab').forEach(tab => {
+    tab.classList.remove('active');
+  });
+ 
+  // Set clicked tab as active
+  clickedTab.classList.add('active');
+ 
+  // Update the price display in the same card
+  const card = tabGroup.closest('.col-4');
+  card.querySelector('.price-display').textContent = price;
+}
+
+
+
         // Scroll reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(e => {
