@@ -86,8 +86,10 @@ p{
 }
 .header{
     width: 100%;
-    background: radial-gradient(#fff,#0c63b4 );
+    background: radial-gradient(#fff,#0c63b4);
     padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .header .row{
     margin-top: 70px;
